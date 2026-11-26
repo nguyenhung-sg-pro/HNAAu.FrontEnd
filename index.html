@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Nhân Viên</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2 class="page-title">Danh Sách Nhân Viên</h2>
+
+    <div class="container">
+        <!-- Thanh công cụ phía trên -->
+        <div class="top-bar">
+            <div class="search-group">
+                <label for="searchId">Nhập Mã Nhân viên</label>
+                <input type="text" id="searchId" placeholder="">
+                <button type="button" class="btn" id="btnSearch">Tìm kiếm</button>
+            </div>
+            <button type="button" class="btn" id="btnGoToAdd">Thêm mới nhân viên</button>
+            <button type="button" class="btn" id="btnUpdate">Sửa thông tin</button>
+        </div>
+
+        <!-- Khu vực hiển thị thông tin nhân viên để chỉnh sửa -->
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="empId">Mã nhân viên</label>
+                <input type="text" id="empId" disabled>
+            </div>
+            <div class="form-group">
+                <label for="empName">Họ & tên</label>
+                <input type="text" id="empName">
+            </div>
+            <div class="form-group">
+                <label for="empPhone">Số điện thoại</label>
+                <input type="text" id="empPhone">
+            </div>
+            <div class="form-group">
+                <label for="empAccount">Tài khoản</label>
+                <input type="text" id="empAccount">
+            </div>
+            <div class="form-group">
+                <label for="empEmail">Email</label>
+                <input type="email" id="empEmail">
+            </div>
+            <div class="form-group">
+                <label for="empYear">Năm sinh</label>
+                <input type="text" id="empYear">
+            </div>
+        </div>
+
+        <!-- Bảng hiển thị danh sách -->
+        <div class="table-title">Hiển thị DS Nhân viên</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã NV ⬍</th>
+                    <th>Họ & tên ⬍</th>
+                    <th>Số điện thoại ⬍</th>
+                    <th>Tài khoản</th>
+                    <th>Email</th>
+                    <th>Năm sinh ⬍</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody">
+                <!-- Dữ liệu sẽ được render bằng JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/demo.baihoc.js"></script>
+</body>
+</html>

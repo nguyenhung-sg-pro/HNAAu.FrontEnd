@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm mới nhân viên</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2 class="page-title">Thêm mới nhân viên</h2>
+
+    <div class="container">
+        <form id="addEmployeeForm" novalidate>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="newEmpId">Mã nhân viên</label>
+                    <input type="text" id="newEmpId">
+                </div>
+                <div class="form-group">
+                    <label for="newEmpName">Họ & tên</label>
+                    <input type="text" id="newEmpName">
+                </div>
+                <div class="form-group">
+                    <label for="newEmpPhone">Số điện thoại</label>
+                    <input type="text" id="newEmpPhone">
+                </div>
+                <div class="form-group">
+                    <label for="newEmpAccount">Tài khoản</label>
+                    <input type="text" id="newEmpAccount">
+                </div>
+                <div class="form-group">
+                    <label for="newEmpEmail">Email</label>
+                    <input type="email" id="newEmpEmail">
+                </div>
+                <div class="form-group">
+                    <label for="newEmpYear">Năm sinh</label>
+                    <input type="text" id="newEmpYear">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-cancel" id="btnCancel">Huỷ</button>
+                <button type="submit" class="btn" id="btnSave">Lưu thông tin</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/add.js"></script>
+</body>
+</html>
